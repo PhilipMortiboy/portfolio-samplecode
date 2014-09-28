@@ -1,0 +1,394 @@
+#page-container
+{
+background: #F4F6FC;
+width: 839px;
+margin: auto;
+text-align: left;
+}
+
+html, body
+{
+margin: 0;
+padding: 0;
+/*background-image:url(http://www.uclacademy.co.uk/images/bg_grad.jpg);
+background-repeat:repeat-x;*/
+font:13px Arial, Helvetica, sans-serif;
+color:#333;
+background-color:#004368;
+text-align: center;
+}
+
+a:link, a:visited
+{
+color: #000066;
+text-decoration: none;
+}
+
+a:hover, a:active
+{
+color: #FF0000;
+text-decoration: strong;
+}
+
+#header
+{
+}
+
+#content
+{
+background: #F2F2F2;
+text-align: left;
+}
+
+#content .padding
+{
+padding: 25px;
+}
+
+/*needs work*/
+#content-news
+{
+width: 561px;
+background: #E0E1E8;
+/*for testing
+border-style: solid;
+border-width: 1px;*/
+}
+
+#content-highlight
+{
+width: 277px;
+height: 400px;
+background: #E0E1E8;
+float: right;
+border-left-style: solid;
+border-left-color: #474747;
+border-left-width: 3px;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+
+#content-highlight .padding
+{
+padding: 5px;
+}
+
+#banner
+{
+background: #F4F6FC;
+text-align: left;
+height: 134px;
+}
+
+#banner-fill
+{
+height: 5px;
+color: #F4F6FC;
+}
+
+#heading
+{
+font-family: 'Coda', cursive;
+font-size: 40px;
+text-transform:lowercase;
+}
+
+#nav
+{
+background: #E0E1E8;
+text-align: left;
+height:26px;
+}
+
+#nav .navbox a:link, #nav .navbox a:visited
+{
+display: block;
+width: 206px;
+height: 26px;
+padding: 1px;
+border-left: 1px solid;
+border-bottom: 1px solid;
+border-color: #7171aa;
+text-align: center;
+color: #ffffff;
+background: #004368;
+float:left;
+}
+
+#nav .navbox a:hover, #nav .navbox a:active
+{
+background-color:#4780A0;
+}
+/*
+#nav .navbox-2 a:link, #nav .navbox-2 a:visited
+{
+display: block;
+width: 89px;
+height: 26px;
+padding: 1px;
+border-left: 1px solid;
+border-bottom: 1px solid;
+border-color: #7171aa;
+text-align: center;
+line-height: 26px;
+font-family: 'Coda', cursive;
+font-size: 24px;
+color: #489FF1;
+background: #000066;
+position: relative;
+left: 654px;
+top: -84px;
+}
+
+#nav .navbox-2 a:hover, #nav .navbox-2 a:active
+{
+background-color:#489FF1;
+color: #000066;
+border-color: #7DB9E8;
+}
+
+#nav .navbox-3 a:link, #nav .navbox-3 a:visited
+{
+display: block;
+width: 89px;
+height: 26px;
+padding: 1px;
+border-left: 1px solid;
+border-bottom: 1px solid;
+border-color: #7171aa;
+text-align: center;
+line-height: 26px;
+font-family: 'Coda', cursive;
+font-size: 24px;
+color: #489FF1;
+background: #000066;
+position: relative;
+left: 561px;
+top: -113px;
+}
+
+#nav .navbox-3 a:hover, #nav .navbox-3 a:active
+{
+background-color:#489FF1;
+color: #000066;
+border-color: #7DB9E8;
+}*/
+
+#footer
+{
+clear: all;
+position: bottom;
+background: #ffffff;
+height: 26px;
+line-height: 26px;
+padding: 2px;
+text-align: right;
+color: #333333;
+opacity:0.9;
+filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+#footer a:link, #footer a:visited
+{
+color: #489FF1;
+text-decoration: strong;	
+}
+
+#footer a:hover, #footer a:active
+{
+color: #489FF1;
+text-decoration: underline;	
+}
+
+/*STYLE FOR NEWS*/
+#news-title
+{
+font-family: 'Coda', cursive;
+font-size: 30px;
+}
+
+#news-author
+{
+height: 20px;
+float: right;
+font-family: 'Coda', cursive;
+font-size: 14px;
+line-height: 55px;
+}
+
+#news-link a:link, #news-link a:visited
+{
+font-family: 'Coda', cursive;
+font-size: 14px;
+color: #000066;
+}
+
+#news-by
+{
+font-family: 'Coda', cursive;
+font-size: 14px;
+color: #000000;
+}
+
+#news-link a:hover, #news-link a:active
+{
+font-family: 'Coda', cursive;
+font-size: 14px;
+color: #489FF1;
+}
+
+#title-line
+{
+background-color: #000066;
+color: #000066;
+height: 5px;
+border: 0px;
+}
+
+/*STYLE FOR HIGHLIGHT*/
+#highlight-title
+{
+font-family: 'Coda', cursive;
+font-size: 20px;
+}
+
+#highlight-link a:link, #highlight-link a:visited
+{
+display: block;
+width: 250px;
+text-align: right;
+border-top: 5px solid;
+border-color: #000066;
+font-family: 'Coda', cursive;
+font-size: 18px;
+color: #000000;
+}
+
+#highlight-link a:hover, #highlight-link a:active
+{
+border-top: 5px solid;
+border-color: #489FF1;
+color: #489FF1;
+}
+
+#highlight-more a:link, #highlight-more a:visited
+{
+display: block;
+width: 250px;
+height: 26px;
+padding: 1px;
+border-left: 1px solid;
+border-bottom: 1px solid;
+border-color: #7171aa;
+text-align: center;
+line-height: 26px;
+font-family: 'Coda', cursive;
+font-size: 24px;
+color: #489FF1;
+background: #000066;
+}
+
+#highlight-more a:hover, #highlight-more a:active
+{
+background-color:#489FF1;
+color: #000066;
+border-color: #7DB9E8;
+}
+/*on hold
+#highlight-image img
+{
+opacity: 0.8;
+}
+
+#highlight-image img:hover
+{
+opacity: 1;
+}
+*/
+/*STYLE FOR SITE PAGE*/
+#site-title
+{
+font-family: 'Coda', cursive;
+font-size: 30px;
+}
+
+#content-wo
+{
+}
+
+#site-details
+{
+display: block;
+width: 75px;
+height: 26px;
+padding: 1px;
+border-top: 5px solid;
+border-color: #000066;
+text-align: center;
+line-height: 26px;
+font-family: 'Coda', cursive;
+font-size: 20px;
+color: #000000;
+}
+
+#site-details:hover
+{
+display: block;
+width: 75px;
+height: 26px;
+padding: 1px;
+border-top: 5px solid;
+border-color: #489FF1;
+text-align: center;
+line-height: 26px;
+font-family: 'Coda', cursive;
+font-size: 20px;
+color: #000000;
+cursor:pointer;
+}
+
+#site-active
+{
+display: block;
+width: 75px;
+height: 26px;
+padding: 1px;
+border-top: 5px solid;
+border-color: #489FF1;
+text-align: center;
+line-height: 26px;
+font-family: 'Coda', cursive;
+font-size: 20px;
+color: #000000;
+}
+
+#site-link a:link, #site-link a:visited
+{
+display: block;
+width: 300px;
+height: 26px;
+padding: 1px;
+border-top: 5px solid;
+border-color: #000066;
+text-align: left;
+line-height: 26px;
+font-family: 'Coda', cursive;
+font-size: 20px;
+color: #000000;
+}
+
+#site-link a:active, #site-link a:hover
+{
+display: block;
+width: 300px;
+height: 26px;
+padding: 1px;
+border-top: 5px solid;
+border-color: #489FF1;
+text-align: left;
+line-height: 26px;
+font-family: 'Coda', cursive;
+font-size: 20px;
+color: #000000;
+}
