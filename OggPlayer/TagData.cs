@@ -7,7 +7,6 @@ using DecibelAudioTools;
 
 namespace OggPlayer
 {
-    //NOTE - should proably use a decible data tagger data set for this in future
     class TagData
     {
         public string BitRate;
