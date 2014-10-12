@@ -64,16 +64,6 @@ namespace OggPlayer
             myTagData.TrackNum = trackNum;
             myTagData.TrackCount = numTracks;
 
-            /*Dictionary<string, string> mMediaTypes = DecibelAudioTools.DataReader.MediaTypeByCode;
-            myTagData.MediaTypeCode = myFile.GetTagValues("MEDIATYPE", ", ", false);
-            if (myTagData.MediaTypeCode == string.Empty)
-                myTagData.MediaType = string.Empty;
-            else
-            {
-                if (mMediaTypes.ContainsKey(myTagData.MediaTypeCode))
-                    myTagData.MediaType = mMediaTypes[myTagData.MediaTypeCode];
-            }*/
-
             string liveString = myFile.GetTagValues("IS_LIVE", ", ", false).ToUpper();
             if (liveString == "TRUE")
                 myTagData.IsLive = true;
@@ -183,16 +173,6 @@ namespace OggPlayer
             myTagData.DiscNum = discNum;
             myTagData.DiscCount = numDiscs;
 
-            /*Dictionary<string, string> mMediaTypes = DecibelAudioTools.DataReader.MediaTypeByCode;
-            myTagData.MediaTypeCode = myFile.GetTagValues("MEDIATYPE", ", ", false);
-            if (myTagData.MediaTypeCode == string.Empty)
-                myTagData.MediaType = string.Empty;
-            else
-            {
-                if (mMediaTypes.ContainsKey(myTagData.MediaTypeCode))
-                    myTagData.MediaType = mMediaTypes[myTagData.MediaTypeCode];
-            }*/
-
             string liveString = myFile.GetTagValues("IS_LIVE", ", ", false).ToUpper();
             if (liveString == "TRUE")
                 myTagData.IsLive = true;
@@ -227,7 +207,6 @@ namespace OggPlayer
                 myTagData.TrackTime = -1;
             }
 
-            //txxx = myFile.GetMappedTagName("TXXX");
             myTagData.Artist = myFile.GetText(myFile.GetMappedTagName("TPE1"));
             myTagData.AlbumTitle = myFile.GetText(myFile.GetMappedTagName("TALB"));
             myTagData.DiscTitle = myFile.GetText(myFile.GetMappedTagName("TXXX"), "Disc Title");
@@ -334,8 +313,6 @@ namespace OggPlayer
 
             myFile.SetComment("COMMENT", myTagData.Comment, false);
             myFile.SetComment("NOTES", myTagData.Notes, false);
-            //myFile.SetComment("TRACKNUMBER", myTagData, false); - myTagData.trackString
-            //myFile.SetComment("DISCNUMBER", myTagData, false); - myTagData.discSteing
             myFile.SetComment("ARTIST", myTagData.Artist, false);
             myFile.SetComment("ALBUM", myTagData.AlbumTitle, false);
             myFile.SetComment("DISCTITLE", myTagData.DiscTitle, false);
@@ -360,7 +337,6 @@ namespace OggPlayer
             myFile.SetComment("BAND", myTagData.Band, false);
             myFile.SetComment("TRACKNUMBER", myTagData.TrackNum.ToString(), false);
             myFile.SetComment("DISCNUMBER", myTagData.DiscNum.ToString(), false);
-            //myFile.SetComment("MEDIATYPE", myTagData, false); myTagData.mediatype
             myFile.SetComment("IS_LIVE", myTagData.IsLive.ToString(), false);
             myFile.SetComment("IS_BONUS", myTagData.IsBonus.ToString(), false);
             myFile.SetComment("CDDB", myTagData.Cddb, false);
@@ -391,8 +367,6 @@ namespace OggPlayer
 
             myFile.SetComment("COMMENT", myTagData.Comment, false);
             myFile.SetComment("NOTES", myTagData.Notes, false);
-            //myFile.SetComment("TRACKNUMBER", myTagData, false); - myTagData.trackString
-            //myFile.SetComment("DISCNUMBER", myTagData, false); - myTagData.discSteing
             myFile.SetComment("ARTIST", myTagData.Artist, false);
             myFile.SetComment("ALBUM", myTagData.AlbumTitle, false);
             myFile.SetComment("DISCTITLE", myTagData.DiscTitle, false);
@@ -415,11 +389,6 @@ namespace OggPlayer
             myFile.SetComment("REMASTERCITY", myTagData.RemasterCity, false);
             myFile.SetComment("REMASTERDATE", myTagData.RemasterDate, false);
             myFile.SetComment("BAND", myTagData.Band, false);
-            //myFile.SetComment("TRACKNUMBER", myTagData.TrackNum.ToString(), false);
-            //myFile.SetComment("DISCNUMBER", myTagData.DiscNum.ToString(), false);
-            //myFile.SetComment("MEDIATYPE", myTagData, false); myTagData.mediatype
-            //myFile.SetComment("IS_LIVE", myTagData.IsLive.ToString(), false);
-            //myFile.SetComment("IS_BONUS", myTagData.IsBonus.ToString(), false);
             myFile.SetComment("CDDB", myTagData.Cddb, false);
             myFile.SetComment("ISRC", myTagData.Isrc, false);
             myFile.SetComment("SPARS", myTagData.Spars, false);
@@ -438,15 +407,6 @@ namespace OggPlayer
             myFile.SetComment("ORIGINAL_CATALOGUENUMBER", myTagData.OriginalCatalogueNumber, false);
             myFile.SetComment("MATRIXNUMBER", myTagData.Matrix, false);
             myFile.SetComment("MUSICDNS_PUID", myTagData.Puid, false);
-
-            /*if (myPictureBlock != null)
-            {
-                if (myPictureBlock.RawData != null)
-                {
-                    string myPicture = System.Convert.ToBase64String(myPictureBlock.RawData);
-                    myFile.SetComment("METADATA_BLOCK_PICTURE", myPicture, false);
-                }
-            }*/
         }
     }
 }
