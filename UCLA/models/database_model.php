@@ -28,7 +28,7 @@ class Database_model extends CI_Model
 			$this->db->query($q);
 			
 			// Insert default admin user
-			$password = $this->encrypt->sha1('chocolate007');
+			$password = $this->encrypt->sha1('[add_password]');
 			$q = "INSERT INTO sds_admin (username, password, id_account) VALUES (?, ?, ?)";
 			$data = array(
 						'admin',
